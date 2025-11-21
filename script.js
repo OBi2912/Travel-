@@ -9,6 +9,35 @@ const translations = {
         "nav-cruises": "Cruises",
         "welcome-title": "Welcome to Travel+",
         "welcome-text": "Discover your next adventure with our exclusive travel experiences. Special promotion: 20% off all packages! Limited time offer - expires soon. Click on any category above to explore our offerings.",
+        "categories-title": "Travel Categories",
+        "cat-tours": "Tours",
+        "cat-insurance": "Insurance",
+        "cat-flights": "Flights",
+        "cat-hotels": "Hotels",
+        "cat-flight-hotel": "Flight + Hotel",
+        "cat-mexico": "Mexico",
+        "cat-offers": "Irresistible Offers",
+        "cat-beaches": "Beaches",
+        "cat-cruises": "Cruises",
+        "cat-parks": "Parks",
+        "cat-activities": "Activities",
+        "cat-groups": "Groups",
+        "cat-study": "Study Abroad",
+        "cat-other": "Other Products",
+        "info-tours": "Explore our guided tours to incredible destinations around the world. From cultural city tours to adventure expeditions, discover the best of each location with expert guides.",
+        "info-insurance": "Protect your travels with comprehensive travel insurance. Coverage for trip cancellations, medical emergencies, lost luggage, and more. Get peace of mind for your journeys.",
+        "info-flights": "Book flights to destinations worldwide with competitive prices. Direct and connecting flights available. Flexible booking options and 24/7 customer support.",
+        "info-hotels": "Find the perfect accommodation for your stay. From luxury resorts to budget hotels, we offer a wide range of options in prime locations worldwide.",
+        "info-flight-hotel": "Save with our flight + hotel packages. Combined bookings offer better rates and seamless travel planning. All-inclusive options available.",
+        "info-mexico": "Discover the vibrant culture and beautiful landscapes of Mexico. From ancient ruins to pristine beaches, explore the rich heritage and natural wonders.",
+        "info-offers": "Take advantage of our irresistible offers and special deals. Limited-time promotions on packages, flights, and accommodations. Don't miss out!",
+        "info-beaches": "Relax on the world's most beautiful beaches. From tropical paradises to secluded coves, find your perfect beach destination for ultimate relaxation.",
+        "info-cruises": "Sail the seas with our premium cruise options. Explore multiple destinations in one trip with world-class service and entertainment onboard.",
+        "info-parks": "Experience nature at its finest in national parks and wildlife reserves. Hiking, wildlife viewing, and outdoor adventures await.",
+        "info-activities": "Engage in exciting activities and adventures. From extreme sports to cultural experiences, find activities that match your interests and energy level.",
+        "info-groups": "Travel with friends, family, or colleagues. Special group rates and customized itineraries for groups of all sizes. Make memories together.",
+        "info-study": "Study abroad programs for students seeking international education. Academic opportunities in top universities worldwide with cultural immersion.",
+        "info-other": "Explore our other travel products and services. Specialty tours, custom packages, and unique travel experiences tailored to your needs.",
         "modal-trips-title": "Trips",
         "modal-trips-text": "Explore our curated selection of adventure trips to breathtaking destinations around the globe.",
         "booking-title": "Booking Details",
@@ -65,6 +94,35 @@ const translations = {
         "nav-cruises": "Cruceros",
         "welcome-title": "Bienvenido a Travel+",
         "welcome-text": "Descubre tu próxima aventura con nuestras experiencias de viaje exclusivas. ¡Promoción especial: 20% de descuento en todos los paquetes! Oferta limitada - expira pronto. Haz clic en cualquier categoría arriba para explorar nuestras ofertas.",
+        "categories-title": "Categorías de Viaje",
+        "cat-tours": "Excursiones",
+        "cat-insurance": "Seguros",
+        "cat-flights": "Vuelos",
+        "cat-hotels": "Hoteles",
+        "cat-flight-hotel": "Vuelo + Hotel",
+        "cat-mexico": "México",
+        "cat-offers": "Ofertas Irresistibles",
+        "cat-beaches": "Playas",
+        "cat-cruises": "Cruceros",
+        "cat-parks": "Parques",
+        "cat-activities": "Actividades",
+        "cat-groups": "Grupos",
+        "cat-study": "Estudiar en el Extranjero",
+        "cat-other": "Otros Productos",
+        "info-tours": "Explora nuestros tours guiados a destinos increíbles alrededor del mundo. Desde tours culturales en ciudades hasta expediciones de aventura, descubre lo mejor de cada ubicación con guías expertos.",
+        "info-insurance": "Protege tus viajes con un seguro de viaje integral. Cobertura para cancelaciones de viaje, emergencias médicas, equipaje perdido y más. Obtén tranquilidad para tus viajes.",
+        "info-flights": "Reserva vuelos a destinos de todo el mundo con precios competitivos. Vuelos directos y de conexión disponibles. Opciones de reserva flexibles y soporte al cliente 24/7.",
+        "info-hotels": "Encuentra el alojamiento perfecto para tu estadía. Desde resorts de lujo hasta hoteles económicos, ofrecemos una amplia gama de opciones en ubicaciones privilegiadas de todo el mundo.",
+        "info-flight-hotel": "Ahorra con nuestros paquetes de vuelo + hotel. Las reservas combinadas ofrecen mejores tarifas y planificación de viajes perfecta. Opciones todo incluido disponibles.",
+        "info-mexico": "Descubre la vibrante cultura y los hermosos paisajes de México. Desde ruinas antiguas hasta playas prístinas, explora el rico patrimonio y las maravillas naturales.",
+        "info-offers": "Aprovecha nuestras ofertas irresistibles y ofertas especiales. Promociones limitadas en paquetes, vuelos y alojamientos. ¡No te lo pierdas!",
+        "info-beaches": "Relájate en las playas más hermosas del mundo. Desde paraísos tropicales hasta calas escondidas, encuentra tu destino de playa perfecto para la relajación máxima.",
+        "info-cruises": "Navega por los mares con nuestras opciones premium de cruceros. Explora múltiples destinos en un solo viaje con servicio y entretenimiento de clase mundial a bordo.",
+        "info-parks": "Experimenta la naturaleza en su máxima expresión en parques nacionales y reservas de vida silvestre. Senderismo, observación de vida silvestre y aventuras al aire libre te esperan.",
+        "info-activities": "Participa en actividades y aventuras emocionantes. Desde deportes extremos hasta experiencias culturales, encuentra actividades que coincidan con tus intereses y nivel de energía.",
+        "info-groups": "Viaja con amigos, familia o colegas. Tarifas especiales para grupos e itinerarios personalizados para grupos de todos los tamaños. Crea recuerdos juntos.",
+        "info-study": "Programas de estudio en el extranjero para estudiantes que buscan educación internacional. Oportunidades académicas en universidades de primer nivel de todo el mundo con inmersión cultural.",
+        "info-other": "Explora nuestros otros productos y servicios de viaje. Tours especializados, paquetes personalizados y experiencias de viaje únicas adaptadas a tus necesidades.",
         "modal-trips-title": "Viajes",
         "modal-trips-text": "Explora nuestra selección curada de viajes de aventura a destinos impresionantes alrededor del mundo.",
         "booking-title": "Detalles de Reserva",
@@ -114,8 +172,14 @@ const translations = {
 };
 
 function showSection(sectionId) {
-    // Open the modal
-    document.getElementById('modal-' + sectionId).style.display = 'block';
+    const modal = document.getElementById('modal-' + sectionId);
+    if (modal) {
+        // Open the specific modal
+        modal.style.display = 'block';
+    } else {
+        // Open generic info modal
+        openInfoModal(sectionId);
+    }
 }
 
 function showAllSections() {
@@ -165,6 +229,16 @@ function openUserModal() {
 
 function openPromotionsModal() {
     document.getElementById('promotions-modal').style.display = 'block';
+}
+
+function openInfoModal(category) {
+    const lang = document.documentElement.lang || 'en';
+    const title = translations[lang]['cat-' + category] || category;
+    const info = translations[lang]['info-' + category] || 'Information coming soon for ' + category;
+
+    document.getElementById('info-modal-title').textContent = title;
+    document.getElementById('info-modal-content').innerHTML = info;
+    document.getElementById('info-modal').style.display = 'block';
 }
 
 function toggleLogin() {

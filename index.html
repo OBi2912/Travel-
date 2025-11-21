@@ -30,6 +30,54 @@
             <h2 data-key="welcome-title">Welcome to Travel+</h2>
             <p data-key="welcome-text">Discover your next adventure with our exclusive travel experiences. Click on any category above to explore our offerings.</p>
         </section>
+
+        <section id="categories">
+            <h2 data-key="categories-title">Travel Categories</h2>
+            <div class="categories-grid">
+                <div class="category-card" onclick="showSection('tours')">
+                    <h3 data-key="cat-tours">Tours</h3>
+                </div>
+                <div class="category-card" onclick="showSection('insurance')">
+                    <h3 data-key="cat-insurance">Insurance</h3>
+                </div>
+                <div class="category-card" onclick="showSection('flights')">
+                    <h3 data-key="cat-flights">Flights</h3>
+                </div>
+                <div class="category-card" onclick="showSection('hotels')">
+                    <h3 data-key="cat-hotels">Hotels</h3>
+                </div>
+                <div class="category-card" onclick="showSection('flight-hotel')">
+                    <h3 data-key="cat-flight-hotel">Flight + Hotel</h3>
+                </div>
+                <div class="category-card" onclick="showSection('mexico')">
+                    <h3 data-key="cat-mexico">Mexico</h3>
+                </div>
+                <div class="category-card" onclick="showSection('offers')">
+                    <h3 data-key="cat-offers">Irresistible Offers</h3>
+                </div>
+                <div class="category-card" onclick="showSection('beaches')">
+                    <h3 data-key="cat-beaches">Beaches</h3>
+                </div>
+                <div class="category-card" onclick="showSection('cruises')">
+                    <h3 data-key="cat-cruises">Cruises</h3>
+                </div>
+                <div class="category-card" onclick="showSection('parks')">
+                    <h3 data-key="cat-parks">Parks</h3>
+                </div>
+                <div class="category-card" onclick="showSection('activities')">
+                    <h3 data-key="cat-activities">Activities</h3>
+                </div>
+                <div class="category-card" onclick="showSection('groups')">
+                    <h3 data-key="cat-groups">Groups</h3>
+                </div>
+                <div class="category-card" onclick="showSection('study')">
+                    <h3 data-key="cat-study">Study Abroad</h3>
+                </div>
+                <div class="category-card" onclick="showSection('other')">
+                    <h3 data-key="cat-other">Other Products</h3>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Modals -->
@@ -254,6 +302,17 @@
         </div>
     </div>
 
+    <!-- Info Modal -->
+    <div id="info-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('info-modal')">&times;</span>
+            <h2 id="info-modal-title">Category Info</h2>
+            <div id="info-modal-content">
+                <p>Information about this category will be displayed here.</p>
+            </div>
+        </div>
+    </div>
+
     <!-- Promotions Modal -->
     <div id="promotions-modal" class="modal">
         <div class="modal-content">
@@ -331,7 +390,7 @@
                 </div>
             </div>
         </div>
-        <p data-key="footer-copyright">&copy; 2025 Travel+ Agency. All rights reserved.</p>
+        <p data-key="footer-copyright">&copy; 2027 Travel+ Agency. All rights By OBi reserved.</p>
     </footer>
 
 </body>
