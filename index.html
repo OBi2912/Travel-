@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel+ Agency - Your Ultimate Travel Destination</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 onclick="showAllSections()" style="cursor: pointer;" data-key="agency-title">Travel+ Agency</h1>
+        <p data-key="agency-subtitle">Discover the world with our exclusive travel experiences</p>
+        <button onclick="openUserModal()" class="signup-btn" data-key="signup-btn">Sign Up / Login</button>
+        <img src="https://loremflickr.com/1200/500/travel,agency,office" alt="Travel agency office" class="hero-img">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a onclick="showSection('trips')" href="#" data-key="nav-trips">Trips</a></li>
+            <li><a onclick="showSection('offers')" href="#" data-key="nav-offers">Offers</a></li>
+            <li><a onclick="showSection('hotels')" href="#" data-key="nav-hotels">Hotels</a></li>
+            <li><a onclick="showSection('packages')" href="#" data-key="nav-packages">Packages</a></li>
+            <li><a onclick="showSection('cruises')" href="#" data-key="nav-cruises">Cruises</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="welcome" onclick="openPromotionsModal()" style="cursor: pointer;">
+            <h2 data-key="welcome-title">Welcome to Travel+</h2>
+            <p data-key="welcome-text">Discover your next adventure with our exclusive travel experiences. Click on any category above to explore our offerings.</p>
+        </section>
+    </main>
+
+    <!-- Modals -->
+    <div id="modal-trips" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-trips')">&times;</span>
+            <h2 data-key="modal-trips-title">Trips</h2>
+            <p data-key="modal-trips-text">Explore our curated selection of adventure trips to breathtaking destinations around the globe.</p>
+            <div class="card" data-price="2500" data-people="1" data-nights="10" data-transport="flight" onclick="openBookingModal(this)">
+                <img src="https://loremflickr.com/600/400/europe" alt="European cities">
+                <h3 data-key="europe-title">European Adventure</h3>
+                <p data-key="europe-desc">Visit Paris, Rome, and Barcelona in one unforgettable journey. From $2,500 per person.</p>
+            </div>
+            <div class="card" data-price="3200" data-people="1" data-nights="12" data-transport="flight" onclick="openBookingModal(this)">
+                <img src="https://loremflickr.com/600/400/asia" alt="Asian landscapes">
+                <h3 data-key="asia-title">Asian Discovery</h3>
+                <p data-key="asia-desc">Immerse yourself in the cultures of Tokyo, Bangkok, and Bali. From $3,200 per person.</p>
+            </div>
+            <div class="card" data-price="4000" data-people="1" data-nights="8" data-transport="flight" onclick="openBookingModal(this)">
+                <img src="https://loremflickr.com/600/400/africa" alt="African safari">
+                <h3 data-key="africa-title">African Safari</h3>
+                <p data-key="africa-desc">Experience the wildlife of Kenya and Tanzania on an epic safari. From $4,000 per person.</p>
+            </div>
+            <div class="card" data-price="1800" data-people="1" data-nights="14" data-transport="car" onclick="openBookingModal(this)">
+                <img src="https://loremflickr.com/600/400/america" alt="American road trip">
+                <h3 data-key="america-title">American Road Trip</h3>
+                <p data-key="america-desc">Drive through the stunning landscapes of the USA, from coast to coast. From $1,800 per person.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-offers" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-offers')">&times;</span>
+            <h2>Offers</h2>
+            <p>Take advantage of our limited-time offers and save on your next vacation. <strong>Special Promotion: Book now and get free upgrades!</strong></p>
+            <div class="card" data-price="500" data-people="2" data-nights="7" data-transport="flight" onclick="openBookingModal(this)">
+                <img src="https://loremflickr.com/600/400/travel" alt="Discount offer">
+                <h3>Early Bird Discount</h3>
+                <p>Book 6 months in advance and get 20% off select packages. Limited time!</p>
+            </div>
+            <div class="card" data-price="800" data-people="4" data-nights="5" data-transport="flight" onclick="openBookingModal(this)">
+                <img src="https://loremflickr.com/600/400/family" alt="Family vacation">
+                <h3>Family Deal</h3>
+                <p>Special rates for families of 4 or more. Kids stay free!</p>
+            </div>
+            <div class="card" data-price="400" data-people="1" data-nights="10" data-transport="flight" onclick="openBookingModal(this)">
+                <img src="https://loremflickr.com/600/400/senior" alt="Senior travel">
+                <h3>Senior Discount</h3>
+                <p>Exclusive 15% off for travelers 65+. Comfortable and relaxed journeys.</p>
+            </div>
+            <div class="card" data-price="600" data-people="10" data-nights="3" data-transport="bus" onclick="openBookingModal(this)">
+                <img src="https://loremflickr.com/600/400/group" alt="Group travel">
+                <h3>Group Discount</h3>
+                <p>Save 25% when booking for groups of 10 or more. Perfect for corporate retreats.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-hotels" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-hotels')">&times;</span>
+            <h2>Hotels</h2>
+            <p>Stay in luxury accommodations handpicked for comfort and convenience.</p>
+            <div class="card" data-price="300" data-people="2" data-nights="7" data-transport="flight" onclick="openBookingModal(this)">
+                <img src="https://loremflickr.com/600/400/beach" alt="Beachfront resort">
+                <h3>Beachfront Resort</h3>
+                <p>Relax in paradise with ocean views and world-class amenities. From $300/night.</p>
+            </div>
+            <div class="card" data-price="250" data-people="2" data-nights="5" data-transport="flight" onclick="openBookingModal(this)">
+                <img src="https://loremflickr.com/600/400/city" alt="City hotel">
+                <h3>City Center Hotel</h3>
+                <p>Experience urban luxury in the heart of the city. From $250/night.</p>
+            </div>
+            <div class="card" data-price="400" data-people="2" data-nights="4" data-transport="flight" onclick="openBookingModal(this)">
+                <img src="https://loremflickr.com/600/400/mountain" alt="Mountain lodge">
+                <h3>Mountain Lodge</h3>
+                <p>Cozy retreats in the Alps with breathtaking mountain views. From $400/night.</p>
+            </div>
+            <div class="card" data-price="500" data-people="2" data-nights="7" data-transport="flight" onclick="openBookingModal(this)">
+                <img src="https://loremflickr.com/600/400/island" alt="Island resort">
+                <h3>Island Resort</h3>
+                <p>Private islands with overwater bungalows and pristine beaches. From $500/night.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-packages" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-packages')">&times;</span>
+            <h2>Packages</h2>
+            <p>All-inclusive packages that combine flights, hotels, and activities for the perfect getaway. <strong>Promotion: Bundle and save up to 30%!</strong></p>
+            <div class="card" data-price="1200" data-people="2" data-nights="5" data-transport="flight" onclick="openBookingModal(this)">
+                <img src="https://loremflickr.com/600/400/romantic" alt="Romantic destination">
+                <h3>Romantic Getaway</h3>
+                <p>Perfect for couples: flights, hotel, and private dinners included. From $1,200 for 2.</p>
+            </div>
+            <div class="card" data-price="2500" data-people="1" data-nights="7" data-transport="flight" onclick="openBookingModal(this)">
+                <img src="https://loremflickr.com/600/400/adventure" alt="Adventure activities">
+                <h3>Adventure Package</h3>
+                <p>Hiking, rafting, and cultural experiences in one package. From $2,500 per person.</p>
+            </div>
+            <div class="card" data-price="1800" data-people="1" data-nights="8" data-transport="flight" onclick="openBookingModal(this)">
+                <img src="https://loremflickr.com/600/400/culture" alt="Cultural tour">
+                <h3>Cultural Tour</h3>
+                <p>Immerse in local traditions, museums, and historical sites. From $1,800 per person.</p>
+            </div>
+            <div class="card" data-price="1500" data-people="1" data-nights="6" data-transport="flight" onclick="openBookingModal(this)">
+                <img src="https://loremflickr.com/600/400/wellness" alt="Wellness retreat">
+                <h3>Wellness Retreat</h3>
+                <p>Spa treatments, yoga, and meditation in serene locations. From $1,500 per person.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-cruises" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-cruises')">&times;</span>
+            <h2>Cruises</h2>
+            <p>Sail the seas with our premium cruise options to exotic ports of call. <strong>Exclusive Offer: Free onboard credits with booking!</strong></p>
+            <div class="card" data-price="1200" data-people="1" data-nights="7" data-transport="cruise" onclick="openBookingModal(this)">
+                <img src="https://loremflickr.com/600/400/mediterranean" alt="Mediterranean cruise">
+                <h3>Mediterranean Cruise</h3>
+                <p>7-night voyage through the stunning Mediterranean coast. From $1,200 per person.</p>
+            </div>
+            <div class="card" data-price="1500" data-people="1" data-nights="7" data-transport="cruise" onclick="openBookingModal(this)">
+                <img src="https://loremflickr.com/600/400/caribbean" alt="Caribbean islands">
+                <h3>Caribbean Adventure</h3>
+                <p>Explore tropical islands and crystal-clear waters. From $1,500 per person.</p>
+            </div>
+            <div class="card" data-price="2000" data-people="1" data-nights="10" data-transport="cruise" onclick="openBookingModal(this)">
+                <img src="https://loremflickr.com/600/400/alaska" alt="Alaskan cruise">
+                <h3>Alaskan Cruise</h3>
+                <p>Witness glaciers, wildlife, and northern lights on this epic journey. From $2,000 per person.</p>
+            </div>
+            <div class="card" data-price="1800" data-people="1" data-nights="8" data-transport="cruise" onclick="openBookingModal(this)">
+                <img src="https://loremflickr.com/600/400/nile" alt="Nile river cruise">
+                <h3>Nile River Cruise</h3>
+                <p>Sail through ancient Egypt with pyramids and temples along the way. From $1,800 per person.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div id="booking-modal" class="modal">
+        <div class="modal-content booking-modal">
+            <span class="close" onclick="closeModal('booking-modal')">&times;</span>
+            <h2 data-key="booking-title">Booking Details</h2>
+            <form id="booking-form">
+                <label for="length-stay" data-key="length-stay-label">Length of Stay (nights):</label>
+                <input type="number" id="length-stay" name="length-stay" min="1" required>
+
+                <label for="num-people" data-key="num-people-label">Number of People:</label>
+                <input type="number" id="num-people" name="num-people" min="1" required>
+
+                <label for="nights" data-key="nights-label">Nights:</label>
+                <input type="number" id="nights" name="nights" min="1" required>
+
+                <label for="transport" data-key="transport-label">Transportation:</label>
+                <select id="transport" name="transport">
+                    <option value="flight">Flight</option>
+                    <option value="bus">Bus</option>
+                    <option value="train">Train</option>
+                    <option value="cruise">Cruise</option>
+                </select>
+
+                <p id="total-price">Total Price: $<span id="price-display">0</span></p>
+
+                <button type="button" onclick="proceedToCheckout()" data-key="proceed-checkout">Proceed to Checkout</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- User Modal -->
+    <div id="user-modal" class="modal">
+        <div class="modal-content user-modal">
+            <span class="close" onclick="closeModal('user-modal')">&times;</span>
+            <h2 data-key="user-title">Create Account</h2>
+            <form id="user-form">
+                <label for="user-name" data-key="name-label">Full Name:</label>
+                <input type="text" id="user-name" name="user-name" required>
+
+                <label for="user-email" data-key="email-label">Email:</label>
+                <input type="email" id="user-email" name="user-email" required>
+
+                <label for="user-password" data-key="password-label">Password:</label>
+                <input type="password" id="user-password" name="user-password" required>
+
+                <label for="user-confirm" data-key="confirm-label">Confirm Password:</label>
+                <input type="password" id="user-confirm" name="user-confirm" required>
+
+                <button type="submit" data-key="create-account">Create Account</button>
+                <p data-key="login-text">Already have an account? <a href="#" onclick="toggleLogin()">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content checkout-modal">
+            <span class="close" onclick="closeModal('checkout-modal')">&times;</span>
+            <h2 data-key="checkout-title">Checkout</h2>
+            <div id="checkout-summary">
+                <h3 data-key="booking-summary">Booking Summary</h3>
+                <p id="summary-details"></p>
+            </div>
+            <form id="checkout-form">
+                <label for="card-number" data-key="card-number-label">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+
+                <label for="expiry" data-key="expiry-label">Expiry Date:</label>
+                <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+
+                <label for="cvv" data-key="cvv-label">CVV:</label>
+                <input type="text" id="cvv" name="cvv" placeholder="123" required>
+
+                <label for="billing-address" data-key="billing-label">Billing Address:</label>
+                <textarea id="billing-address" name="billing-address" required></textarea>
+
+                <button type="submit" data-key="complete-booking">Complete Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Promotions Modal -->
+    <div id="promotions-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('promotions-modal')">&times;</span>
+            <h2 data-key="promotions-title">Special Promotions</h2>
+            <div class="promotion-item">
+                <h3 data-key="promo1-title">20% Off All Packages</h3>
+                <p data-key="promo1-desc">Book any travel package and save 20%. Valid for bookings made before December 31st.</p>
+            </div>
+            <div class="promotion-item">
+                <h3 data-key="promo2-title">Free Hotel Upgrade</h3>
+                <p data-key="promo2-desc">Stay 7 nights or more and get a free room upgrade. Limited availability.</p>
+            </div>
+            <div class="promotion-item">
+                <h3 data-key="promo3-title">Family Discount</h3>
+                <p data-key="promo3-desc">Families of 4 or more save 25% on all destinations. Kids under 12 stay free.</p>
+            </div>
+            <div class="promotion-item">
+                <h3 data-key="promo4-title">Early Bird Special</h3>
+                <p data-key="promo4-desc">Book 6 months in advance and receive complimentary airport transfers.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-key="footer-contact">Contact Us</h3>
+                <p>123 Travel Street<br>Adventure City, AC 12345<br>Phone: (555) 123-4567<br>Email: info@travelplus.com</p>
+            </div>
+            <div class="footer-section">
+                <h3 data-key="footer-follow">Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://facebook.com/travelplusagency" aria-label="Facebook" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/travelplus" aria-label="Twitter" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter">
+                            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com/travelplusagency" aria-label="Instagram" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                            <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/company/travelplus" aria-label="LinkedIn" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect width="4" height="12" x="2" y="9"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </a>
+                    <a href="https://youtube.com/@travelplusagency" aria-label="YouTube" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube">
+                            <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/>
+                            <path d="m10 15 5-3-5-3z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3 data-key="footer-language">Language</h3>
+                <div class="language-selector">
+                    <button onclick="setLanguage('en')" class="lang-btn active">
+                        🇺🇸 English
+                    </button>
+                    <button onclick="setLanguage('es')" class="lang-btn">
+                        🇪🇸 Español
+                    </button>
+                </div>
+            </div>
+        </div>
+        <p data-key="footer-copyright">&copy; 2025 Travel+ Agency. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
